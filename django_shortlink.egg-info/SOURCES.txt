@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_shortlink.egg-info/PKG-INFO
+django_shortlink.egg-info/SOURCES.txt
+django_shortlink.egg-info/dependency_links.txt
+django_shortlink.egg-info/requires.txt
+django_shortlink.egg-info/top_level.txt
+shortlink/__init__.py
+shortlink/admin.py
+shortlink/models.py
+shortlink/urls.py
+shortlink/views.py
+shortlink/migrations/__init__.py
