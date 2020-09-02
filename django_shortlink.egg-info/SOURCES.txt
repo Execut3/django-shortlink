@@ -11,5 +11,7 @@ shortlink/__init__.py
 shortlink/admin.py
 shortlink/models.py
 shortlink/urls.py
+shortlink/utils.py
 shortlink/views.py
+shortlink/migrations/0001_initial.py
 shortlink/migrations/__init__.py
