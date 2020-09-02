@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: django-shortlink
-Version: 0.0.1
+Version: 0.0.2
 Summary: A simple Django App to hold short links mapped to long urls used in your projects.
 Home-page: https://github.com/Execut3/django-shortlink
 Author: Execut3
 Author-email: execut3.binarycodes@gmail.com
 License: GPT
-Description: # django-bigbluebutton
+Description: # django-shortlink
         
         A simple Django App to hold short links mapped to long urls used in your projects.
         

@@ -4,8 +4,8 @@ from .models import ShortLink
 
 
 def map_link(request, **kwargs):
-    link = kwargs.get('link', '')
-    s = ShortLink.objects.filter(short_url=link).first()
+    path = kwargs.get('path', '')
+    s = ShortLink.objects.filter(short_path=path).first()
     if s:
-        return HttpResponseRedirect(s.long_url)
+        return HttpResponseRedirect(s.full_url)
     raise Http404

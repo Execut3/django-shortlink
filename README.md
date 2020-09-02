@@ -27,3 +27,32 @@ INSTALLED_APPS = [
     "django_shortlink",
 ]
 ```
+
+update `urls.py` like below:
+
+```
+urlpatterns += [
+    ...
+    re_path(r'', include('shortlink.urls')),
+    ...
+```
+
+Now set Setting variables, If not will use default values as below:
+
+```python
+SHORTEN_PATH_LENGTH = 8
+SHORTLINK_URL_BASE = 's/'
+HOST_ADDRESS = 'http://localhost:8000'
+```
+
+Now to create shortlink, pass your full_url like this:
+
+```python
+from shortlink.models import ShortLink
+s = ShortLink.objects.create(full_url="https://test.com")
+print(s.short_url)
+```
+
+`short_url` is the shorten url that you should give users.
+If they click on it, methods in `views.py` will be triggered
+and if short_url is valid, will redirect to `full_url`.
