@@ -6,7 +6,7 @@ README = open(os.path.join(here, 'README.md')).read()
 
 setup(
     name='django-shortlink',
-    version='0.0.3',
+    version='0.0.5',
     packages=['shortlink'],
     description='A simple Django App to hold short links mapped to long urls used in your projects.',
     long_description=README,

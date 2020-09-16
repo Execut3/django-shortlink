@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.translation import ugettext as _
 
 from .settings import *
 from .utils import generate_random_str
@@ -8,16 +9,18 @@ class ShortLink(models.Model):
     name = models.CharField(
         max_length=100,
         null=True, blank=True,
-        verbose_name='Presentation name for url'
+        verbose_name=_('Presentation name for url')
     )   # If not set, will be set to full_url
     short_path = models.CharField(
         db_index=True,
         max_length=100,
-        verbose_name='Shorten Path ID',
+        null=True, blank=True,
+        verbose_name=_('Shorten Path ID'),
+        help_text=_('If not provided, will generate automatically')
     )   # Should be db_index ed.
     full_url = models.CharField(
         max_length=500,
-        verbose_name='Real URL to be shorten'
+        verbose_name=_('Real URL to be shorten')
     )
 
     def __str__(self):
@@ -26,6 +29,7 @@ class ShortLink(models.Model):
     class Meta:
         db_table = 'shortlink'
         verbose_name = 'Shortlink'
+        verbose_name_plural = _('Shortlink')
 
     @property
     def short_url(self):
