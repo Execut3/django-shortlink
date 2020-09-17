@@ -19,5 +19,4 @@ setup(
         'Django>=2.0',
     ],
     include_package_data=True,
-
 )
