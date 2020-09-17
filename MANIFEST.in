@@ -1,5 +1,7 @@
 include LICENSE
-include README.rst
+include README.md
 include *.txt *.ini *.cfg *.rst
 recursive-include shortlink/migrations *.py
-recursive-include shortlink *.ico *.png *.css *.gif *.jpg *.txt *.js *.html *.xml
+recursive-include shortlink/locale *.mo
+recursive-include shortlink/locale *.po
+recursive-include shortlink *.ico *.png *.css *.gif *.jpg *.txt *.js *.html *.xml *.po *.mo

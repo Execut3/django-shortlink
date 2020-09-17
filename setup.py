@@ -18,7 +18,6 @@ setup(
     install_requires=[
         'Django>=2.0',
     ],
-    package_data={
-        'shortlink': ['migrations/*'],
-    },
+    include_package_data=True,
+
 )
