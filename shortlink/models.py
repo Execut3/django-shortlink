@@ -24,7 +24,7 @@ class ShortLink(models.Model):
     )
 
     def __str__(self):
-        return '{}-{}'.format(self.id, self.name)
+        return '{}-{}'.format(self.pk, self.name)
 
     class Meta:
         db_table = 'shortlink'

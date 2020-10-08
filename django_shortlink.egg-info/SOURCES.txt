@@ -20,4 +20,5 @@ shortlink/migrations/0001_initial.py
 shortlink/migrations/0002_auto_20200902_2012.py
 shortlink/migrations/0003_auto_20200916_2241.py
 shortlink/migrations/0004_auto_20200916_2242.py
+shortlink/migrations/0005_auto_20200917_1707.py
 shortlink/migrations/__init__.py
